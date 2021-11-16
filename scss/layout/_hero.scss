@@ -1,3 +1,17 @@
+.hero {
+  max-width: 1600px;
+  padding: 200px 0;
+  border-color: rgba(47, 48, 58, 0.4);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/overlay.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
 .hero__btn {
   display: flex;
   margin: auto;
@@ -18,17 +32,4 @@
   font-size: 16px;
   line-height: 1.8;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.hero {
-  max-width: 1600px;
-  padding: 200px 0;
-  border-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/overlay.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
