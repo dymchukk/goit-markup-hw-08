@@ -25,7 +25,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 html {
@@ -204,7 +204,7 @@ label {
 }
 
 .nav__link.current::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -250,19 +250,23 @@ label {
   cursor: pointer;
   border-radius: 4px;
   background: #f5f4fa;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav__button-item:hover {
   background-color: var(--accent-color);
   color: var(--main-bg-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .nav__button-item:focus {
   background-color: var(--accent-color);
   color: var(--main-bg-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .nav-menu {
@@ -274,7 +278,7 @@ label {
   display: block;
   margin-right: 93px;
   padding-bottom: 32px 0;
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -286,7 +290,7 @@ label {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
 }
 
 .nav-menu__logo-st {
@@ -294,7 +298,7 @@ label {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
   color: var(--main-bg-color);
 }
 
@@ -339,7 +343,7 @@ label {
 }
 
 .contacts__link.current::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -400,7 +404,7 @@ label {
 }
 
 .contacts-tel-top {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   display: inline-flex;
@@ -412,7 +416,8 @@ label {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contacts-tel-top:hover, .contacts-tel-top:focus {
+.contacts-tel-top:hover,
+.contacts-tel-top:focus {
   color: var(--accent-color);
 }
 
@@ -465,7 +470,8 @@ label {
   margin-right: 30px;
 }
 
-.features__icon:hover, .features__icon:focus {
+.features__icon:hover,
+.features__icon:focus {
   border: var(--accent-color);
   color: var(--accent-color);
 }
@@ -491,7 +497,8 @@ label {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address__link:hover, .address__link:focus {
+.address__link:hover,
+.address__link:focus {
   color: var(--accent-color);
 }
 
@@ -520,7 +527,8 @@ label {
   height: 100%;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -581,10 +589,12 @@ label {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms 0.4, 0, 0.2, 1;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms 0.4, 0, 0.2, 1;
 }
 
-.sotial__link:hover, .sotial__link:focus {
+.sotial__link:hover,
+.sotial__link:focus {
   fill: var(--accent-color);
   color: var(--main-bg-color);
   background-color: var(--accent-color);
@@ -638,7 +648,7 @@ label {
   display: block;
   margin-right: 93px;
   padding-bottom: 32px 0;
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -651,7 +661,7 @@ label {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
 }
 
 .footer-section__logo-st {
@@ -659,7 +669,7 @@ label {
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
   color: var(--main-bg-color);
 }
 
@@ -698,7 +708,8 @@ label {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.contact-form__btn:hover, .contact-form__btn:focus {
+.contact-form__btn:hover,
+.contact-form__btn:focus {
   border-color: var(--accent-color);
   background-color: var(--accent-color);
   color: var(--main-bg-color);
@@ -784,7 +795,8 @@ label {
   line-height: 24px;
   letter-spacing: 0.03em;
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    text-decoration-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-form__conditions:hover {
@@ -929,7 +941,8 @@ label {
   flex-basis: calc((100% - 90px) / 4);
   text-align: center;
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -963,7 +976,7 @@ label {
   color: var(--main-bg-color);
 }
 
-.solution-col__btn {
+.hero__btn {
   display: flex;
   margin: auto;
   text-align: center;
@@ -985,11 +998,15 @@ label {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.solution-col {
+.hero {
   max-width: 1600px;
   padding: 200px 0;
   border-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay.jpeg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/overlay.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1013,9 +1030,11 @@ label {
   display: block;
 }
 
-.project__link:hover, .project__link:focus {
+.project__link:hover,
+.project__link:focus {
   display: block;
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project__link:hover .project__overlay,
@@ -1108,10 +1127,12 @@ label {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers__link:hover, .customers__link:focus {
+.customers__link:hover,
+.customers__link:focus {
   border-color: var(--accent-color);
   color: var(--accent-color);
 }
@@ -1144,7 +1165,8 @@ label {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join__icon:hover, .join__icon:focus {
+.join__icon:hover,
+.join__icon:focus {
   background-color: var(--accent-color);
 }
 
@@ -1156,10 +1178,12 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.join__link:hover, .join__link:focus {
+.join__link:hover,
+.join__link:focus {
   fill: var(--accent-color);
   background-color: var(--accent-color);
   color: #ffffff;
@@ -1213,7 +1237,8 @@ label {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .colform__btn-footer:hover {
