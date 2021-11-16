@@ -1,0 +1,49 @@
+.footer {
+  background: #2f303a;
+  padding: 60px 0;
+  align-items: baseline;
+}
+.footer-contacts {
+  width: 1600px;
+  height: 252px;
+  left: 0px;
+  top: 1628px;
+}
+.footer-contacts {
+  color: var(--main-text-color);
+  background: #2f303a;
+}
+.footer-section {
+  align-items: baseline;
+  display: flex;
+}
+.footer-section__logo-booton {
+  display: block;
+  margin-right: 93px;
+  padding-bottom: 32px 0;
+  font-family: 'Raleway', normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--main-title-color);
+  margin-top: 20px;
+}
+.footer-section__logo-web {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  font-family: 'Raleway', normal;
+}
+.footer-section__logo-st {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  font-family: 'Raleway', normal;
+  color: var(--main-bg-color);
+}
+
+.footer-section__logo-booton-address {
+  margin-top: 20px;
+}
