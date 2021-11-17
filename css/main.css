@@ -143,6 +143,7 @@ label {
 }
 
 .team-our {
+  padding-top: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -182,13 +183,44 @@ label {
   padding-bottom: 94px;
 }
 */
-.header {
+/*.header {
   border-bottom: 1px solid #ececec;
 }
-
 .header__container {
   display: flex;
   align-items: center;
+}*/
+.header {
+  display: flex;
+  width: 480px;
+  height: 60px;
+  display: block;
+}
+
+.menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: var(--main-bg-color);
+}
+.menu-button:hover {
+  color: var(--accent-color);
+}
+
+.menu-button .icon-cross {
+  display: none;
+}
+
+.menu-button .js-open-menu.icon-cross {
+  display: block;
+}
+
+.menu-button .menu-button .js-open-menu .icon-menu {
+  display: none;
 }
 
 /*.nav {
@@ -278,14 +310,66 @@ label {
   }
 }
 */
+.nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.nav__title:not(:last-child) {
+  margin-right: 8px;
+}
+
+.nav__button-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  text-transform: none;
+  outline: none;
+  border: navajowhite;
+  padding: 6px 22px;
+  cursor: pointer;
+  border-radius: 4px;
+  background: #f5f4fa;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.nav__button-item:hover {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.nav__button-item:focus {
+  background-color: var(--accent-color);
+  color: var(--main-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+.nav__item {
+  margin-right: 50px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .nav-menu {
   display: none;
-  /* display: flex;
-  align-items: center;*/
+}
+@media screen and (min-width: 480px) {
+  .nav-menu {
+    display: block;
+  }
 }
 @media screen and (min-width: 768px) {
   .nav-menu {
-    display: block;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -1047,49 +1131,28 @@ label {
   color: var(--main-bg-color);
 }
 
-/*.hero {
-  max-width: 1600px;
-  padding: 200px 0;
-  border-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../images/overlay.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.hero__btn {
-  display: flex;
-  margin: auto;
-  text-align: center;
-  position: center;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.06em;
-  padding: 10px 32px;
-  border-radius: 4px;
-  background-color: var(--accent-color);
-  color: white;
-  text-decoration: none;
-  border-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.8;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-*/
 .hero {
   padding: 200px 0;
   border-color: rgba(47, 48, 58, 0.4);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/overlay.jpeg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/overlay1.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  /*
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../../images/overlay2.jpeg");
+  }
+  @media screen and(min-width:1200px) {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/overlay.jpeg");
+  }*/
 }
 
 .hero__btn {
@@ -1097,6 +1160,7 @@ label {
   margin: auto;
   text-align: center;
   position: center;
+  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;

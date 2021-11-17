@@ -1,7 +1,40 @@
-.header {
+/*.header {
   border-bottom: 1px solid #ececec;
 }
 .header__container {
   display: flex;
   align-items: center;
+}*/
+.header {
+  display: flex;
+  width: 480px;
+  height: 60px;
+  display: block;
+}
+.menu-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: var(--main-bg-color);
+  
+  }
+}
+.icon-menu {
+  &:hover {
+    color: var(--accent-color);
+}
+.menu-button .icon-cross {
+  &:hover {
+    color: var(--accent-color);
+  display: none;
+}
+.menu-button .js-open-menu.icon-cross {
+  display: block;
+}
+.menu-button .menu-button .js-open-menu .icon-menu {
+  display: none;
 }
