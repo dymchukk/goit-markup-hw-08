@@ -1,4 +1,10 @@
-/*.work-section {
+.work-section {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.work-section {
   margin-top: 94px;
   padding-top: 0px;
 }
@@ -47,4 +53,3 @@
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 }
-*/

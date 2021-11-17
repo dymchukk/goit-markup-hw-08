@@ -1,19 +1,11 @@
-/*.modal {
+.modal {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   padding: 40px;
   background: #ffffff;
-}
-.modal__text {
-  margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  text-align: center;
-  line-height: 1.12;
-  color: rgba(33, 33, 33, 1);
 }
 .close-btn {
   position: absolute;
@@ -36,7 +28,7 @@
   height: 11px;
   background-color: var(--main-bg-color);
 }
-*/
+
 .modal__text {
   margin-bottom: 12px;
   font-weight: 700;

@@ -1,8 +1,7 @@
 .features {
-  @media screen and(min-width:1600px) {
-    display: flex;
-    justify-content: center;
-  }
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .features__title {
@@ -14,7 +13,8 @@
   }
 }
 .features__item {
-  display: inline-block;
+  display: block;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.7;
@@ -33,12 +33,13 @@
 .features__div {
   background-color: #f5f4fa;
   margin-bottom: 30px;
-  width: 270px;
+  width: 450px;
   height: 120px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
 
   &:not(:last-child) {
     margin-right: 30px;
