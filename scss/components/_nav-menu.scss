@@ -1,12 +1,16 @@
 .nav-menu {
-  display: flex;
-  align-items: center;
+  display: none;
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  /* display: flex;
+  align-items: center;*/
 }
 .nav-menu__logo {
   display: block;
   margin-right: 93px;
   padding-bottom: 32px 0;
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -17,13 +21,13 @@
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
 }
 .nav-menu__logo-st {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--accent-color);
-  font-family: 'Raleway', normal;
+  font-family: "Raleway", normal;
   color: var(--main-bg-color);
 }

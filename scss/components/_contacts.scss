@@ -1,3 +1,4 @@
+/*
 .contacts {
   box-sizing: border-box;
   color: var(--main-text-color);
@@ -107,4 +108,8 @@
   &:focus {
     color: var(--accent-color);
   }
+}
+*/
+.contacts__link {
+  display: none;
 }

@@ -1,14 +1,17 @@
 .features {
-  display: flex;
-  justify-content: center;
+  @media screen and(min-width:1600px) {
+    display: flex;
+    justify-content: center;
+  }
 }
-.features__title:not(:last-child) {
-  margin-right: 30px;
-}
+
 .features__title {
   display: inline-block;
   line-height: 1.7;
   color: var(--main-title-color);
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 .features__item {
   display: inline-block;
@@ -36,10 +39,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.features__div:not(:last-child) {
-  margin-right: 30px;
-}
+
 .features__icon {
   &:hover,
   &:focus {
