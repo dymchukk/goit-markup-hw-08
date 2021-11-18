@@ -1,4 +1,4 @@
-/*.customers__title {
+.customers__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -10,16 +10,23 @@
 }
 
 .customers__list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3 - 15px);
+  margin-bottom: 15px;
+
   list-style: none;
   display: flex;
 }
 .customers__item {
   width: 170px;
   height: 92px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
-.customers__item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .customers__link {
   fill: var(--main-text-color);
 }
@@ -45,4 +52,3 @@
 .customers__icon {
   fill: currentColor;
 }
-*/
