@@ -13,28 +13,58 @@
 }
 .menu-button {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 20px;
   display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: var(--main-bg-color);
-  
-  }
 }
+
 .icon-menu {
+  fill: currentColor;
+  color: #212121;
+  border: 1px solid #000000;
+  /*@media screen and (min-width: 768px) {
+    display: none;
+  }
   &:hover {
     color: var(--accent-color);
+  }*/
 }
-.menu-button .icon-cross {
-  &:hover {
+.icon-cross {
+  fill: currentColor;
+  color: #212121;
+
+  /*@media screen and (min-width: 768px) {
+    display: none;
+  }*/
+  /*&:hover {
     color: var(--accent-color);
-  display: none;
+    display: none;
+  }*/
 }
-.menu-button .js-open-menu.icon-cross {
+/*.js-open-menu .icon-menu {
   display: block;
 }
-.menu-button .menu-button .js-open-menu .icon-menu {
+.js-open-menu .icon-cross {
   display: none;
 }
+.js-open-menu .icon-cross {
+  display: block;
+}
+.js-open-menu .icon-menu {
+  display: none;
+}
+.menu-container {
+  position: absolute;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+}
+.menu-container .js-open-menu {
+  display: block;
+}
+*/
