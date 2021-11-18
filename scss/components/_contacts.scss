@@ -113,3 +113,19 @@
 .contacts__link {
   display: none;
 }
+.contacts__item {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts__item + .contacts__item {
+  margin-left: 30px;
+}
