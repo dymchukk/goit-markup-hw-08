@@ -1,33 +1,35 @@
 //UTIlS
-@import "./utils/variables";
-@import "./utils/visually-hidden";
-@import "./utils/is-hidden";
+@import './utils/variables';
+@import './utils/visually-hidden';
+@import './utils/is-hidden';
 
 //BASE
-@import "./base/global";
+@import './base/global';
 
 //COMPONEN
-@import "./components/container";
-@import "./components/section";
-@import "./components/header";
-@import "./components/nav";
-@import "./components/nav-menu";
-@import "./components/contacts";
-@import "./components/features";
-@import "./components/address";
-@import "./components/backdrop";
-@import "./components/modal";
-@import "./components/sotial";
-@import "./components/footer";
-@import "./components/contact-form";
-@import "./components/mobile";
+@import './components/container';
+@import './components/section';
+@import './components/header';
+@import './components/nav';
+@import './components/nav-menu';
+@import './components/contacts';
+@import './components/features';
+@import './components/address';
+@import './components/backdrop';
+@import './components/modal';
+@import './components/sotial';
+@import './components/footer';
+@import './components/contact-form';
+@import './components/mobile';
 //LAYOUT
-@import "./layout/work-section";
-@import "./layout/team";
-@import "./layout/solution";
-@import "./layout/hero";
-@import "./layout/project";
-@import "./layout/customers";
-@import "./layout/join";
-@import "./layout/colform";
-@import "./layout/brackpoints";
+@import './layout/work-section';
+@import './layout/team';
+@import './layout/solution';
+@import './layout/hero';
+@import './layout/project';
+@import './layout/customers';
+@import './layout/join';
+@import './layout/colform';
+@import './layout/brackpoints';
+@import './layout/menu';
+@import './layout/contacts-menu';
