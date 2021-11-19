@@ -185,7 +185,7 @@ label {
 }
 */
 .header {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -1091,6 +1091,11 @@ label {
   pointer-events: none;
   transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), height 250ms cubic-bezier(0.4, 0, 0.2, 1) visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .mobile__menu {
+    display: none;
+  }
+}
 
 .mobile__menu.is-open {
   opacity: 1;
@@ -1106,6 +1111,12 @@ label {
 .mobile__close-icon {
   width: 40px;
   height: 40px;
+}
+
+.menu__list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 /*.work-section {
