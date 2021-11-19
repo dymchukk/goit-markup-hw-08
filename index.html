@@ -21,27 +21,8 @@
     <header class="header">
         <div class="container header__container">
             <a class="nav-menu__logo" href=""><span class="nav-menu__logo-web">Web</span class="nav-menu__logo-st">Studio<span></a>
-            <nav class="nav-menu">
-
-<div class="js-menu-container mobile__container">
-               <button 
-               class="mobile__button js-open-menu"
-               type="button">
-                   <svg 
-                   width="40" 
-                   height="40" 
-                   aria-label="переключатель мобильного меню"
-                   aria-expanded="false">
-                       <use class="icon-cross" href="./images/sprite.svg#icon-drop-cross"></use>
-                       <use class="icon-menu" href="./images/sprite.svg#icon-drop-menu"></use>
-                   </svg>
-               </button>
-
-<!--
-<div class="backdrop">
-    
-    <div class="mobile__menu">
-        <form class="mobile__form">
+            
+             <!--  <nav class="nav-menu">
 <ul class="contacts nav__list menu-container">
     <li class="nav__item"> <a class="nav__link current" href="./index.html">Студия</a></li>
     <li class="nav__item"> <a class="nav__link" href="./portfolio.html">Портфолио</a></li>
@@ -58,12 +39,30 @@
                 <use href="./images/sprite.svg#icon-cell"></use>
             </svg> +38 096 111 11 11</a></li>
         </ul>
-        </form>
+    
     </div>
-</div> 
 </nav>-->
+
+<!--Start Mobil menu-->
+<button class="mobile__button"data-menu-open >
+<svg width="40" height="40">
+    <use class="icon-menu" href="./images/sprite.svg#icon-drop-menu"></use>
+</svg>
+</button>
+<div class="mobile__menu"data-menu>
+    <button class="mobile__close-button" data-menu-close>
+        <svg width="40" height="40"> 
+            <use class="mobile__close-icon" href="./images/sprite.svg#icon-drop-cross"></use>
+        </svg>
+    </button>
+    <li class="contacts__item"><a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon" width="16px"
+                height="16px">
+                <use href="./images/sprite.svg#icon-cell"></use>
+            </svg> +38 096 111 11 11</a></li>
+    </ul>
+</div>
                
-                <ul class="contacts nav__list menu-container">
+            <!--<ul class="contacts nav__list">
                     <li class="nav__item"> <a class="nav__link current" href="./index.html">Студия</a></li>
                     <li class="nav__item"> <a class="nav__link" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav__item"> <a class="nav__link" href="">Контакты</a></li>
@@ -81,9 +80,9 @@
 
                                         
     
-    <main>
+    <main>-->
                                                 <!--HERO-->
-       <section class="hero">
+       <!--<section class="hero">
             <div class="container">
         <h1 class="solution">Эффективные решения<br> для вашего бизнеса</h1>
             <button data-modal-open class="hero__btn" type="button">Заказать услугу</button>
@@ -143,11 +142,11 @@
                        </button>
                 </div> 
             </div>
-        </section>
+        </section>-->
                                        
                                                  <!--FEATURES-->
 
-
+<!--
             <section class="section">
          <div class="container">
             <h2 class="visually-hidden">Наши преимущества</h2>
@@ -182,11 +181,11 @@
                 </li>
             </ul>
         </div>
-        </section>
+        </section>-->
 
                                                 <!--WORK-SECTION-->
                                             
-        <section class="section work-section">
+     <!--   <section class="section work-section">
             <div class="container">
             <h2 class="work-section__text">Чем мы занимаемся</h2>
             <ul class ="work-section__list">
@@ -203,11 +202,11 @@
                 <li class="work-section__item"><img src="./images/img (02).jpeg" alt="картинка с планшетом" width="370"></li></div>
             </ul>
             </div>
-        </section>
+        </section>-->
 
                                                 <!--TEAM-SECTION-->
 
-
+<!--
         <section class="section team-section">
             <div class="container">
             <h2 class="team-our">Наша команда</h2>
@@ -371,12 +370,12 @@
                 </li>
                  </ul>
             </div>
-        </section>
+        </section>-->
 
                                     
                                                 <!--CUSTOMERS-->
 
-        <section class="section">
+   <!--     <section class="section">
             <div class=" customers container">
                 <h2 class="customers__title">Постоянные клиенты</h2>
             <ul class="customers__list">
@@ -442,7 +441,7 @@
             </ul>
         </div>
     </section>
-    </main>
+    </main>-->
                                                  <!--FOOTER-->
 <!---
  <footer class="footer">
@@ -512,6 +511,7 @@
     </footer>-->
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>

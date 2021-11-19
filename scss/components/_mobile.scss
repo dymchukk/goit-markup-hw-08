@@ -1,76 +1,55 @@
-.menu-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
+.mobile__button {
+  background-color: transparent;
+  cursor: pointer;
   border: none;
-  background-color: var(--main-bg-color);
-}
+  padding: 0;
+  line-height: 0;
 
-.icon-menu {
-  display: block;
-  position: absolute;
-  fill: currentColor;
-  color: #212121;
-  border: 1px solid #000000;
-  /*@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
+}
+.mobile__close-button {
+  position: absolute;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+  top: 10px;
+  right: 15px;
+  fill: currentColor;
   &:hover {
     color: var(--accent-color);
-  }*/
+  }
 }
-.icon-cross {
-  display: block;
-  position: absolute;
-  fill: currentColor;
-  color: #212121;
-
-  /*@media screen and (min-width: 768px) {
-    display: none;
-  }*/
-  /*&:hover {
-    color: var(--accent-color);
-    display: none;
-  }*/
+.mobile__menu {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: wheat;
+  padding: 48px 40px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-/*.js-open-menu .icon-menu {
-  display: block;
+.mobile__menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
 }
-.js-open-menu .icon-cross {
-  display: none;
+.icon-menu {
+  width: 40px;
+  height: 40px;
 }
-.js-open-menu .icon-cross {
-  display: block;
-}
-.js-open-menu .icon-menu {
-  display: none;
-}
-.menu-container {
-  position: absolute;
-  background-color: #ffffff;
-  text-align: center;
-  padding: 20px;
-  font-size: 20px;
-}
-.menu-container .js-open-menu {
-  display: block;
-}
-*/
-.mobile__form {
-  list-style: none;
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  position: absolute;
-  width: 480px;
-  height: 50%;
-  padding: 15px;
-  background-color: #ffffff;
-}
-.mobile__container .js-open-menu {
-  display: block;
+.mobile__close-icon {
+  width: 40px;
+  height: 40px;
 }

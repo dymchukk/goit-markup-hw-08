@@ -1,18 +1,24 @@
-/*.header {
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+  background-color: rgb(219, 243, 219);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 .header__container {
   display: flex;
   align-items: center;
-}*/
-.header {
-  border-bottom: 1px solid #ececec;
-  position: relative;
-  display: flex;
-  width: 480px;
-  height: 60px;
-  display: block;
-}
-.header__container {
-  display: block;
+  justify-content: space-between;
 }
