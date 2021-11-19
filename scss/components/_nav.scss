@@ -1,7 +1,14 @@
-/*.nav {
+.nav {
   display: flex;
   flex-direction: wrap;
 }
+.nav__list {
+  display: flex;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
 .nav__button-item {
   font-weight: 500;
   font-size: 16px;
@@ -39,6 +46,7 @@
   }
 }
 .nav__item {
+  display: flex;
   margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
@@ -54,7 +62,7 @@
   }
 }
 .nav__link {
-  display: block;
+  display: flex;
   font-weight: 500;
   padding: 32px 0;
   margin-left: 50px;
@@ -88,4 +96,3 @@
     display: none;
   }
 }
-*/

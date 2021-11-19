@@ -1,21 +1,19 @@
 .nav-menu {
-  display: none;
-  position: absolute;
-  top: 10px;
-  right: 22px;
+  display: flex;
+
   @media screen and (max-width: 480px) {
     display: block;
   }
-  @media screen and (min-width: 768px) {
+  /*@media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-  }
+  }*/
 }
 .nav-menu__logo {
   display: block;
   margin-right: 93px;
   padding-top: 15px;
-  padding-bottom: 32px 0;
+  /*padding-bottom: 32px 0;*/
 
   font-family: "Raleway", normal;
   font-weight: 700;

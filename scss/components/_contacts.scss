@@ -1,5 +1,4 @@
-/*
-.contacts {
+/*.contacts {
   box-sizing: border-box;
   color: var(--main-text-color);
   font-weight: 500;
@@ -35,7 +34,7 @@
   color: var(--accent-color);
 
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -48,6 +47,7 @@
 }
 .contacts__list {
   display: flex;
+  align-items: center;
   margin-left: auto;
   letter-spacing: 0.03em;
 }
@@ -93,7 +93,7 @@
   }
 }
 .contacts-tel-top {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   display: inline-flex;
@@ -109,8 +109,8 @@
     color: var(--accent-color);
   }
 }
-*/
-.contacts__link {
+
+/*.contacts__link {
   display: none;
 }
 .contacts__item {
@@ -129,3 +129,4 @@
 .contacts__item + .contacts__item {
   margin-left: 30px;
 }
+*/
