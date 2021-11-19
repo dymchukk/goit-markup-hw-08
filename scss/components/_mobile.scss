@@ -1,4 +1,5 @@
 .mobile__button {
+  position: absolute;
   background-color: transparent;
   cursor: pointer;
   border: none;
@@ -32,7 +33,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  margin: 5px;
   background-color: wheat;
   padding: 48px 40px;
   opacity: 0;

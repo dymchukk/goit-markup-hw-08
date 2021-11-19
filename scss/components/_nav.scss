@@ -1,7 +1,17 @@
-/*.nav {
+.nav {
   display: flex;
-  flex-direction: wrap;
+  flex-direction: column;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
+
 .nav__list {
   display: flex;
   &:not(:last-child) {
@@ -58,7 +68,6 @@
     margin-right: 50px;
   }
   @media screen and (max-width: 768px) {
-    display: none;
   }
 }
 .nav__link {
@@ -96,7 +105,6 @@
     display: none;
   }
 }
-*/
 .nav__list {
   display: flex;
   flex-direction: column;
