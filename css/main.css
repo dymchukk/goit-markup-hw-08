@@ -1048,7 +1048,6 @@ label {
 }
 
 .mobile__button {
-  position: absolute;
   background-color: transparent;
   cursor: pointer;
   border: none;
