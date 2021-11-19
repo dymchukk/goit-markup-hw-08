@@ -1598,6 +1598,7 @@ label {
 .menu-social {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   margin-top: 64px;
   margin-bottom: 48px;
   display: flex;
@@ -1632,6 +1633,11 @@ label {
 }
 .contacts-menu:focus {
   color: var(--main-bg-color);
+}
+@media screen and (max-width: 489px) {
+  .contacts-menu {
+    font-size: 8vh;
+  }
 }
 
 .contacts-menu__link {
