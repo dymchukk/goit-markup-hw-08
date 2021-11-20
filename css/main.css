@@ -561,14 +561,16 @@ label {
 }
 @media screen and (min-width: 768px) {
   .features__title {
-    display: inline-block;
-    line-height: 1.7;
-    color: var(--main-title-color);
     margin-top: 30px;
     margin-left: 30px;
   }
   .features__title:not(:last-child) {
     margin-right: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .features__title {
+    width: 1200px;
   }
 }
 
@@ -1495,18 +1497,28 @@ label {
 
 .customers__list {
   display: flex;
-  flex-wrap: wrap;
-  flex-basis: calc(100% / 2 - 15px);
   justify-content: center;
   margin-bottom: 60px;
   list-style: none;
-  margin-top: -30px;
-  margin-left: -30px;
+}
+@media screen and (min-width: 480px) {
+  .customers__list {
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 15px);
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .customers__list {
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 15px);
+    display: flex;
+  }
 }
 @media screen and (min-width: 1200px) {
   .customers__list {
-    flex-basis: calc(100% / 3 - 15px);
-    margin-bottom: 15px;
+    display: flex;
     list-style: none;
   }
 }
@@ -1514,11 +1526,11 @@ label {
 .customers__item {
   width: 170px;
   height: 92px;
-  margin-top: 30px;
-  margin-left: 30px;
 }
 @media screen and (min-width: 768px) {
   .customers__item {
+    margin-top: 30px;
+    margin-left: 30px;
     flex-basis: calc((100% - 60px) / 2);
   }
 }
