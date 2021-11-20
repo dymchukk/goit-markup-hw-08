@@ -138,13 +138,17 @@
 .contact-form__chackbox {
   display: flex;
   flex-direction: row;
-  font-size: 14px;
+  font-size: 12px;
   align-items: center;
   justify-content: center;
   line-height: 1, 71;
   letter-spacing: 0.03em;
   color: #757575;
   cursor: pointer;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 
 .contact-form__chackbox-icon {
