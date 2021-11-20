@@ -16,7 +16,7 @@
 </head>
 
 <body>
-                                                        <!--HEADER-->
+                                              <!--HEADER-->
 
     <header class="header">
         <div class="container header__container">
@@ -211,13 +211,15 @@
 
                                                 <!--WORK-SECTION-->
                                             
-     <!--   <section class="section work-section">
+      <section class="section work-section">
             <div class="container">
             <h2 class="work-section__text">Чем мы занимаемся</h2>
             <ul class ="work-section__list">
                 <div class="work-modal">
                     <p class="work-modal__p">Дизайнерские решения</p>
-                <li class="work-section__item"><img src="./images/img0.jpeg" alt="картинка работа на клавиатуре" width="370">
+                <li class="work-section__item">
+                    
+                    <img src="./images/img0.jpeg" alt="картинка работа на клавиатуре" width="370">
                 </li>
             </div>
             <div class="work-modal">
@@ -228,17 +230,75 @@
                 <li class="work-section__item"><img src="./images/img (02).jpeg" alt="картинка с планшетом" width="370"></li></div>
             </ul>
             </div>
-        </section>-->
+        </section>
 
                                                 <!--TEAM-SECTION-->
 
-<!--
         <section class="section team-section">
             <div class="container">
             <h2 class="team-our">Наша команда</h2>
             <ul class ="team">
                 
-                <li class="team__item card"><img src="./images/foto01.jpeg" alt="Игорь Демьяненко" width="450">
+                <li class="team__item card">
+                    
+                    <picture>
+                        <source media="(min-width: 1200px)" srcset="
+                        ./images/command/product_designer/product_designer_d.webp
+                        ./images/command/product_designer/product_designer_d@2x.webp" 
+                        type="image/webp" />
+                        <source media="(min-width: 1200px)" srcset="
+                                           ./images/command/product_designer/product_designer_d.jpg 1x,
+                                          ./images/command/product_designer/product_designer_d@2x.jpg 2x
+                                        " />
+                    
+                        <source media="(min-width: 768px)" srcset="
+                                         ./images/command/product_designer/product_designer_t.webp  1x,
+                                          ./images/command/product_designer/product_designer_t@2x.webp 2x
+                                        " type="image/webp" />
+                        <source media="(min-width: 768px)" srcset="
+                                           ./images/command/product_designer/product_designer_t.jpg  1x,
+                                          ./images/command/product_designer/product_designer_t@2x.jpg 2x
+                                        " />
+                                        <source media="(min-width: 320px)" srcset="
+                                           ./images/command/product_designer/product_designer_m.webp 1x
+                                            ./images/command/product_designer/product_designer_m@2x.webp 2x"
+                                                    type="image/webp" />
+                                    <source media="(min-width: 320px)" srcset="
+                                     ./images/command/product_designer/product_designer_m.jpg 
+                                      ./images/command/product_designer/product_designer_m@2x.jpg " />
+                                
+                                    
+                                    
+                    
+                        <img class="about-list-img" src="#" alt="Игорь Демьяненко" />
+                    </picture>
+                    </li>
+                    <li class="about-list-item">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="
+                                          ./images/about/about-img-desktop-2.webp    1x,
+                                          ./images/about/about-img-desktop-2@2x.webp 2x
+                                        " type="image/webp" />
+                            <source media="(min-width: 1200px)" srcset="
+                                          ./images/about/about-img-desktop-2.jpg    1x,
+                                          ./images/about/about-img-desktop-2@2x.jpg 2x
+                                        " />
+                    
+                            <source media="(min-width: 768px)" srcset="
+                                          ./images/about/about-img-tablet-2.webp    1x,
+                                          ./images/about/about-img-tablet-2@2x.webp 2x
+                                        " type="image/webp" />
+                            <source media="(min-width: 768px)" srcset="
+                                          ./images/about/about-img-tablet-2.jpg    1x,
+                                          ./images/about/about-img-tablet-2@2x.jpg 2x
+                                        " />
+                    
+                            <img class="about-list-img" src="#" alt="Игорь Демьяненко" />
+                        </picture>
+                    
+                    
+                    
+                    <!--<img src="./images/foto01.jpeg" alt="Игорь Демьяненко" width="270">-->
                     <div class="team__title-text">
                     <h3 class="team__title">Игорь Демьяненко</h3>
                     <p class="team__text">Product Designer</p>
@@ -396,7 +456,7 @@
                 </li>
                  </ul>
             </div>
-        </section>-->
+        </section>
 
                                     
                                                 <!--CUSTOMERS-->
