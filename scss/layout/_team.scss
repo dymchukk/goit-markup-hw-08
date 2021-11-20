@@ -1,13 +1,28 @@
 .team {
   display: flex;
-  flex-direction: column;
-  width: 450px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left: 30px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
+  }
+}
+.team-our {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  color: var(--main-title-color);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 30px;
   }
 }
 
@@ -17,7 +32,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
+  margin-top: 30px;
   &:not(:last-child) {
     margin-right: 30px;
   }
