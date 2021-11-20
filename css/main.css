@@ -185,9 +185,6 @@ label {
 }
 */
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -1068,7 +1065,7 @@ label {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: wheat;
+  background-color: #ffffff;
   padding: 48px 40px;
   opacity: 0;
   visibility: hidden;
@@ -1289,9 +1286,6 @@ label {
 }
 */
 .hero {
-  position: relative;
-  top: 60px;
-  left: 0;
   padding: 118px 0;
   border-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero_img_d.jpg");
@@ -1633,7 +1627,7 @@ label {
 }
 
 .menu__listt {
-  margin-top: 200px;
+  margin-top: 150px;
   display: block;
 }
 
