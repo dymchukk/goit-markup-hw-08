@@ -68,6 +68,9 @@
   font-size: 36px;
   line-height: 1.16;
   color: var(--main-title-color);
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .work-section__main {
   margin-bottom: 50px;
@@ -82,6 +85,7 @@
 .work-section__list {
   display: flex;
 }
+
 .work-section__item:not(:last-child) {
   margin-right: 30px;
 }
@@ -103,4 +107,7 @@
   bottom: 0;
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
