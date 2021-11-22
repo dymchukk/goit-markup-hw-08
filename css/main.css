@@ -1603,7 +1603,7 @@ label {
 @media screen and (min-width: 768px) {
   .customers__list {
     flex-wrap: wrap;
-    flex-basis: calc(100% / 2 - 15px);
+    flex-basis: calc(100% / 3 - 15px);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1621,7 +1621,7 @@ label {
   .customers__item {
     margin-top: 30px;
     margin-left: 30px;
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc(100% / 3 -15px);
   }
 }
 @media screen and (min-width: 1200px) {
