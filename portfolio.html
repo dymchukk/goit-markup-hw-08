@@ -17,30 +17,90 @@
 <body>
 
                                                 <!--Header-->
-    <header class="header">
+    <!--<header class="header">
         <div class="container header__container">
             <a class="nav-menu__logo" href=""><span class="nav-menu__logo-web">Web</span class="nav-menu__logo-st">Studio<span></a>
-            <nav class="nav-menu">
-                
+
+            <button class="mobile__button" data-menu-open>
+                <svg width="40" height="40">
+                    <use class="icon-menu" href="./images/sprite.svg#icon-drop-menu"></use>
+                </svg>
+            </button>
+
+            <nav class="nav-menu"> 
                 <ul class="contacts nav__list">
                     <li class="nav__item"> <a class="nav__link " href="./index.html">Студия</a></li>
                     <li class="nav__item"> <a class="nav__link current" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav__item"> <a class="nav__link" href="">Контакты</a></li>
                 </ul>
+                <ul class="contacts__list">
+                    <li class="contacts__item"><a class="contacts__link" href="e-mail:info@devstudio.com"><svg class="contacts__icon"
+                                width="16px" height="16px">
+                                <use href="./images/sprite.svg#icon-envelope"></use>
+                            </svg></svg>info@devstudio.com</a>
+                    </li>
+                    <li class="contacts__item"><a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon"
+                                width="16px" height="16px">
+                                <use href="./images/sprite.svg#icon-cell"></use>
+                            </svg> +38 096 111 11 11</a></li>
+                </ul>
             </nav>
-            <ul class="contacts__list">
-                <li class="contacts__item"><a class="contacts__link" href="e-mail:info@devstudio.com"><svg
-                            class="contacts__icon" width="16px" height="16px">
-                            <use href="./images/sprite.svg#icon-envelope"></use>
-                        </svg></svg>info@devstudio.com</a>
-                </li>
-                <li class="contacts__item"><a class="contacts__link" href="tel:+380961111111"><svg class="contacts__icon"
-                            width="16px" height="16px">
-                            <use href="./images/sprite.svg#icon-cell"></use>
-                        </svg> +38 096 111 11 11</a></li>
-            </ul>
         </div>
-    </header>
+
+           <!--Start Mobil menu-->
+        
+       <!---- <div class="mobile__menu" data-menu>
+            <button class="mobile__close-button" data-menu-close>
+                <svg width="40" height="40">
+                    <use class="mobile__close-icon" href="./images/sprite.svg#icon-drop-cross"></use>
+                </svg>
+            </button>
+            <nav class="menu">
+                <div class="menu__list">
+                    <ul class="contacts menu__list">
+                        <li class="menu__item"> <a class="menu__link current" href="./index.html">Студия</a></li>
+                        <li class="menu__item"> <a class="menu__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="menu__item"> <a class="menu__link" href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="menu__listt">
+                    <ul class="contacts-menu__list">
+        
+                        <li class="contacts-menu__item"><a class="contacts-menu__link" href="tel:+380961111111"><svg
+                                    class="contacts-menu__icon" width="16px" height="16px">
+                                    <use href="./images/sprite.svg#icon-cell"></use>
+                                </svg> +38 096 111 11 11</a></li>
+                    </ul>
+        
+                    <ul class="contacts-menu__list">
+                        <li class="contacts-menu__item"><a class="contacts-menu__link" href="e-mail:info@devstudio.com"><svg
+                                    class="contacts-menu__icon" width="16px" height="16px">
+                                    <use href="./images/sprite.svg#icon-envelope"></use>
+                                </svg></svg>info@devstudio.com</a>
+                        </li>
+        
+                    </ul>
+                    <div>
+                        <ul class="menu-social">
+                            <li class="menu-social__item">
+                                <a class="menu-social__link" href="Instagram">Instagram</a>
+                            </li>
+                            <li class="menu-social__item">
+                                <a class="menu-social__link" href="Twitter">Twitter</a>
+                            </li>
+                            <li class="menu-social__item">
+                                <a class="menu-social__link" href="Facebook">Facebook</a>
+                            </li>
+                            <li class="menu-social__item">
+                                <a class="menu-social__link" href="LinkedIn">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        
+            </nav>
+        </div>
+    </header>-->
                                     <!--Nav-Section-->
 
     <main>
@@ -61,7 +121,7 @@
             <li class="project__item">
                 <a href="./portfolio.html" class="project__link" >
                     <div class="project__box">
-                     <!--<img src="./images/img-nout.png" alt="noutbook" width="370" height="270">-->
+                    
                     <picture>
                         <source media="(min-width: 1200px)" srcset="./images/portfolio/sample1/portfolio_sample1_d.webp
                                                                                     
@@ -104,7 +164,7 @@
             <li class="project__item">
                 <a href="./portfolio.html" class="project__link">
                     <div class="project__box">
-                <!--<img src="./images/img-play.png"alt="piopleplay"width="370"height="270">-->
+          
                 <picture>
                     <source media="(min-width: 1200px)"
                         srcset="./images/portfolio/sample2/portfolio_sample2_d.webp
@@ -150,7 +210,7 @@
             <li class="project__item">
                 <a href="./portfolio.html" class="project__link">
                     <div class="project__box">
-                <!--<img src="./images/img-seafood.png" alt="seafood" width="370" height="270">-->
+               
                 <picture>
                     <source media="(min-width: 1200px)"
                         srcset="./images/portfolio/sample3/portfolio_sample3_d.webp
@@ -196,7 +256,7 @@
             <li class="project__item">
                 <a href="./portfolio.html" class="project__link">
                     <div class="project__box">
-                <!--<img src="./images/img-наушники.png" alt="headphone" width="370" height="270">-->
+             
                 <picture>
                     <source media="(min-width: 1200px)"
                         srcset="./images/portfolio/sample4/portfolio_sample4_d.webp
@@ -242,7 +302,7 @@
             <li class="project__item">
                 <a href="./portfolio.html" class="project__link">
                     <div class="project__box">
-                <!--<img src="./images/img-box.png" alt="коробка" width="370" height="270">-->
+               
                 <picture>
                     <source media="(min-width: 1200px)"
                         srcset="./images/portfolio/sample5/portfolio_sample5_d.webp
@@ -289,7 +349,7 @@
             <li class="project__item">
                 <a href="./portfolio.html" class="project__link">
                     <div class="project__box">
-                    <!--<img src="./images/img-borders.png" alt="экран" width="370" height="270">-->
+                   
                     <picture>
                         <source media="(min-width: 1200px)"
                             srcset="./images/portfolio/sample6/portfolio_sample6_d.webp
@@ -336,7 +396,7 @@
             <li class="project__item">
                 <a href="./portfolio.html" class="project__link">
                     <div class="project__box">
-                <!--<img src="./images/img-book.png" alt="книга">-->
+               
                 <picture>
                     <source media="(min-width: 1200px)"
                         srcset="./images/portfolio/sample7/portfolio_sample7_d.webp
@@ -381,8 +441,7 @@
             </li>
             <li class="project__item">
                 <a href="./portfolio.html" class="project__link">
-                    <div class="project__box">
-                <!--<img src="./images/img-lab.png" alt="lab" width="370" height="270">-->
+            <div class="project__box">
                 <picture>
                     <source media="(min-width: 1200px)"
                         srcset="./images/portfolio/sample8/portfolio_sample8_d.webp
@@ -429,7 +488,7 @@
             <li class="project__item">
                 <a href="./portfolio.html" class="project__link">
                     <div class="project__box">
-                <!--<img src="./images/img-bussines.png" alt="работа на ноутбуке" width="370" height="270">-->
+                
                 <picture>
                     <source media="(min-width: 1200px)"
                         srcset="./images/portfolio/sample9/portfolio_sample9_d.webp

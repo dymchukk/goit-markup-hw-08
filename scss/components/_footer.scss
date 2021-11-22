@@ -8,24 +8,27 @@
   height: 252px;
   left: 0px;
   top: 1628px;
-}
-.footer-contacts {
   color: var(--main-text-color);
   background: #2f303a;
 }
+
 .footer-section {
   @media screen and (min-width: 480px) {
-    width: 480px;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  @media screen and (max-width: 767px) {
-    flex-direction: column;
-    text-align: center;
+  @media screen and (max-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
     align-items: baseline;
   }
 
   @media screen and (min-width: 1200px) {
-    width: 1200px;
     display: flex;
     align-items: baseline;
   }
