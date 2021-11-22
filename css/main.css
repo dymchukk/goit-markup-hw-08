@@ -899,7 +899,7 @@ label {
   background: #2f303a;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-section {
     width: 100%;
     flex-direction: column;
@@ -1891,6 +1891,13 @@ label {
   fill: currentColor;
 }
 
+@media screen and (min-width: 480px) {
+  .join {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+}
 @media screen and (min-width: 768px) {
   .join {
     margin-left: 70px;
@@ -1963,6 +1970,7 @@ label {
   .join__p {
     margin-top: 60px;
     text-align: center;
+    margin: 167pxpx;
   }
 }
 @media screen and (min-width: 768px) {
