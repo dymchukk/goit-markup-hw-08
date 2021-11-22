@@ -439,7 +439,7 @@ label {
 @media screen and (min-width: 768px) {
   .contacts__list {
     flex-direction: column;
-    margin-bottom: 10px;
+    justify-content: space-between;
     letter-spacing: 0.02em;
     font-size: 12px;
     line-height: 14px;
@@ -464,19 +464,18 @@ label {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
-.contacts__item :not(:last-child) {
+@media screen and (min-width: 1200px) {
+  .contacts__item :not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.contacts__item .contacts__item :not(:last-child) {
   margin-right: 50px;
 }
-
-.contacts__item :not(:last-child) {
-  margin-right: 50px;
-}
-
-.contacts__item + .contacts__item {
+.contacts__item .contacts__item + .contacts__item {
   margin-left: 30px;
 }
-
-.contacts-tel {
+.contacts__item .contacts-tel {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -484,22 +483,20 @@ label {
   color: var(--main-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-tel:hover {
+.contacts__item .contacts-tel:hover {
   color: var(--accent-color);
 }
-.contacts-tel:focus {
+.contacts__item .contacts-tel:focus {
   color: var(--accent-color);
 }
-
-.contacts__icon {
+.contacts__item .contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
-.contacts__icon:hover {
+.contacts__item .contacts__icon:hover {
   color: var(--accent-color);
 }
-
-.contacts-tel-top {
+.contacts__item .contacts-tel-top {
   content: "";
   width: 20px;
   height: 20px;
@@ -511,7 +508,7 @@ label {
   color: var(--main-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts-tel-top:hover, .contacts-tel-top:focus {
+.contacts__item .contacts-tel-top:hover, .contacts__item .contacts-tel-top:focus {
   color: var(--accent-color);
 }
 
@@ -1160,7 +1157,6 @@ label {
 
 .contact-form__footer {
   display: inline-flexbox;
-  margin-left: 93px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -1170,6 +1166,11 @@ label {
 @media screen and (min-width: 768px) {
   .contact-form__footer {
     text-align: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact-form__footer {
+    margin-left: 93px;
   }
 }
 
@@ -1185,11 +1186,13 @@ label {
 @media screen and (min-width: 480px) {
   .contact-form__footer-text {
     margin-top: 60px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 768px) {
   .contact-form__footer-text {
     margin-top: 30px;
+    text-align: center;
   }
 }
 
@@ -1974,7 +1977,6 @@ label {
 }
 
 .colform__inputfooter {
-  width: 358px;
   height: 50px;
   padding-left: 20px;
   margin: 0 auto;
@@ -1990,13 +1992,19 @@ label {
 @media screen and (min-width: 480px) {
   .colform__inputfooter {
     margin-bottom: 20px;
-    width: 480px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
   .colform__inputfooter {
     margin-bottom: 20px;
     width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .colform__inputfooter {
+    width: 358px;
+    height: 50px;
   }
 }
 
@@ -2025,7 +2033,6 @@ label {
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .colform__btn-footer {
-    width: 200px;
     text-align: center;
   }
 }
