@@ -1,3 +1,5 @@
+.customers {
+}
 .customers__title {
   margin-bottom: 50px;
   margin-top: 50px;
@@ -14,15 +16,9 @@
 }
 
 .customers__list {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 60px;
-  list-style: none;
-
   @media screen and (min-width: 480px) {
     flex-wrap: wrap;
-    margin-top: 30px;
-    margin-left: 30px;
+    margin-top: -15px;
     flex-basis: calc(100% / 2 - 15px);
   }
 
@@ -38,12 +34,18 @@
 .customers__item {
   width: 170px;
   height: 92px;
+  @media screen and (min-width: 480px) {
+    width: calc((100% - 2 * 30px) / 2);
+    margin: 15px;
+  }
   @media screen and (min-width: 768px) {
-    margin-top: 30px;
-    margin-left: 30px;
-    flex-basis: calc(100% / 3 -15px);
+    width: calc((100% - 3 * 30px) / 3);
+    margin: 15px;
   }
   @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+
     &:not(:last-child) {
       margin-right: 30px;
     }

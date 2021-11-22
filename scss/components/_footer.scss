@@ -1,4 +1,4 @@
-/*.footer {
+.footer {
   background: #2f303a;
   padding: 60px 0;
   align-items: baseline;
@@ -14,8 +14,21 @@
   background: #2f303a;
 }
 .footer-section {
-  align-items: baseline;
-  display: flex;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+    text-align: center;
+    align-items: baseline;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    display: flex;
+    align-items: baseline;
+  }
 }
 .footer-section__logo-booton {
   display: block;
@@ -47,4 +60,13 @@
 .footer-section__logo-booton-address {
   margin-top: 20px;
 }
-*/
+.footer-section__add {
+  @media screen and (min-width: 480px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+}

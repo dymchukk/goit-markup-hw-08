@@ -1,5 +1,11 @@
 .join {
-  margin-left: 70px;
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 70px;
+  }
 }
 .join__item {
   width: 44px;
@@ -11,6 +17,11 @@
 
 .join__list {
   display: flex;
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 .join__icon {
   width: 20px;
@@ -42,12 +53,27 @@
 }
 
 .join__p {
-  margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  @media screen and (min-width: 480px) {
+    margin-top: 60px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    margin-top: 30px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
 }
 
 /*.join__icon {
