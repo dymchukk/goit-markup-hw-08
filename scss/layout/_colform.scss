@@ -65,6 +65,9 @@
   &:focus {
     background-color: var(--accent-color);
   }
+  @media screen and (min-width: 480px) {
+    margin-left: 130px;
+  }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     text-align: center;

@@ -43,6 +43,7 @@
   line-height: 1.19;
   color: var(--main-title-color);
   margin-top: 20px;
+  text-align: center;
 }
 .footer-section__logo-web {
   font-weight: 700;
@@ -66,7 +67,9 @@
 .footer-section__add {
   @media screen and (min-width: 480px) {
     text-align: center;
+    margin-left: 131px;
   }
+
   @media screen and (min-width: 768px) {
     text-align: center;
   }

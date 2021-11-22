@@ -16,7 +16,6 @@
 .menu__list {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -101,10 +100,11 @@
 }
 .menu-social__item {
   margin-right: 20px;
-  /*
-  border-right: 1px solid #75787a;*/
+
+  border-right: 1px solid #3d3e3f;
+
   &:not(:last-child) {
-    border-right: 1px solid #75787a;
+    border-right: 1px solid #3d3e3f;
   }
 }
 
