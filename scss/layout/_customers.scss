@@ -19,7 +19,7 @@
   @media screen and (min-width: 480px) {
     flex-wrap: wrap;
     margin-top: -15px;
-    flex-basis: calc(100% / 2 - 15px);
+    display: flex;
   }
 
   @media screen and (min-width: 768px) {
@@ -33,10 +33,11 @@
   }
 }
 .customers__item {
+  display: flex;
   width: 170px;
   height: 92px;
   @media screen and (min-width: 480px) {
-    width: calc((100% - 2 * 30px) / 2);
+    width: calc(100% / 2 -30px);
     margin: 15px;
   }
   @media screen and (min-width: 768px) {
@@ -44,9 +45,6 @@
     margin: 15px;
   }
   @media screen and (min-width: 1200px) {
-    width: 170px;
-    height: 92px;
-
     &:not(:last-child) {
       margin-right: 30px;
     }

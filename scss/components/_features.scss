@@ -1,16 +1,8 @@
 .features {
-  display: flex;
-  justify-content: center;
-  @media screen and (min-width: 480px) {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    flex-wrap: wrap;
-    display: flex;
-    flex-basis: calc(100% / 2 - 60px);
-  }
-
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
+    padding-top: 30px;
+
     display: flex;
     flex-basis: calc(100% / 2 - 60px);
   }
@@ -24,28 +16,22 @@
   display: inline-block;
   line-height: 1.7;
   color: var(--main-title-color);
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
+
   @media screen and (min-width: 480px) {
-    width: 450px;
     text-align: center;
     flex-basis: calc(100% / 2 - 60px);
   }
   @media screen and (min-width: 768px) {
-    width: 354px;
     text-align: center;
     flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 30px;
     }
-    @media screen and (min-width: 1200px) {
-      &:not(:last-child) {
-        margin-right: 30px;
-      }
-    }
   }
 }
+
 .features__item {
   display: inline-block;
   font-weight: 700;
@@ -89,6 +75,7 @@
   }
   @media screen and (min-width: 768px) {
     text-align: left;
+    margin-left: 30px;
   }
 }
 .features__div {
@@ -101,6 +88,7 @@
   @media screen and (min-width: 480px) {
   }
   @media screen and (min-width: 768px) {
+    margin-left: 30px;
   }
   @media screen and (min-width: 1200px) {
     background-color: #f5f4fa;
@@ -124,56 +112,3 @@
     color: var(--accent-color);
   }
 }
-
-/*
-
-.features {
-  display: flex;
-  justify-content: center;
-}
-.features__title:not(:last-child) {
-  margin-right: 30px;
-}
-.features__title {
-  display: inline-block;
-  line-height: 1.7;
-  color: var(--main-title-color);
-}
-.features__item {
-  display: inline-block;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  margin-bottom: 10px;
-  text-transform: uppercase;
-  color: var(--main-title-color);
-}
-.features__text {
-  display: inline-block;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-  color: var(--main-text-color);
-}
-.features__div {
-  background-color: #f5f4fa;
-  margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
-  border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.features__div:not(:last-child) {
-  margin-right: 30px;
-}
-.features__icon {
-  &:hover,
-  &:focus {
-    border: var(--accent-color);
-    color: var(--accent-color);
-  }
-}
-*/
