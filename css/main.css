@@ -1125,6 +1125,10 @@ label {
   border: none;
   padding: 0;
   line-height: 0;
+  fill: currentColor;
+}
+.mobile__button:hover, .mobile__button:focus {
+  color: var(--accent-color);
 }
 @media screen and (min-width: 768px) {
   .mobile__button {
@@ -1145,7 +1149,7 @@ label {
   right: 15px;
   fill: currentColor;
 }
-.mobile__close-button:hover {
+.mobile__close-button:hover, .mobile__close-button:focus {
   color: var(--accent-color);
 }
 
