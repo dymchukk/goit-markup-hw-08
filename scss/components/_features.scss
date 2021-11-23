@@ -17,7 +17,6 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap;
   }
 }
 
@@ -94,25 +93,14 @@
 }
 .features__div {
   background-color: #f5f4fa;
-  margin-bottom: 30px;
   border-radius: 4px;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  &:not(:last-child) {
-    margin-right: 30px;
-  }
-  &:not(:first-child) {
-    margin-top: 30px;
-  }
   @media screen and (min-width: 480px) {
-    width: 450px;
-    height: 120px;
   }
   @media screen and (min-width: 768px) {
-    width: 354px;
-    height: 120px;
   }
   @media screen and (min-width: 1200px) {
     background-color: #f5f4fa;
@@ -123,6 +111,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 }
 
