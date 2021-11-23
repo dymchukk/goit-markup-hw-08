@@ -2,9 +2,7 @@
   @media screen and (min-width: 768px) {
     flex-wrap: wrap;
     padding-top: 30px;
-
     display: flex;
-    flex-basis: calc(100% / 2 - 60px);
   }
   @media screen and (min-width: 1200px) {
     display: flex;
@@ -26,6 +24,7 @@
     flex-basis: calc(100% / 2 - 30px);
   }
   @media screen and (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - 30px);
     &:not(:last-child) {
       margin-right: 30px;
     }
@@ -93,15 +92,12 @@
   @media screen and (min-width: 1200px) {
     background-color: #f5f4fa;
     margin-bottom: 30px;
-    width: 270px;
+
     height: 120px;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
   }
 }
 

@@ -521,7 +521,6 @@ label {
     flex-wrap: wrap;
     padding-top: 30px;
     display: flex;
-    flex-basis: calc(100% / 2 - 60px);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -549,6 +548,9 @@ label {
   }
 }
 @media screen and (min-width: 1200px) {
+  .features__title {
+    flex-basis: calc(100% / 4 - 30px);
+  }
   .features__title:not(:last-child) {
     margin-right: 30px;
   }
@@ -626,15 +628,11 @@ label {
   .features__div {
     background-color: #f5f4fa;
     margin-bottom: 30px;
-    width: 270px;
     height: 120px;
     border-radius: 4px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .features__div:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
