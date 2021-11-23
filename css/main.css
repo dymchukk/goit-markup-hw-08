@@ -414,6 +414,11 @@ label {
 .contacts__link:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    margin-left: 10px;
+  }
+}
 
 .contacts__link.current {
   color: var(--accent-color);
@@ -1197,6 +1202,12 @@ label {
     text-align: center;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contact-form__footer-text {
+    margin-top: 0;
+    text-align: left;
+  }
+}
 
 .mobile__button {
   background-color: transparent;
@@ -1405,17 +1416,23 @@ label {
 }
 .team .team-our {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   margin-top: 50px;
   color: var(--main-title-color);
 }
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .team .team-our {
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
 @media screen and (min-width: 1200px) {
   .team .team-our {
     padding-top: 30px;
+    font-size: 36px;
+    line-height: 1.16;
   }
 }
 .team .team__item {
@@ -1932,6 +1949,7 @@ label {
 @media screen and (min-width: 1200px) {
   .colform {
     display: flex;
+    flex-direction: row;
   }
 }
 
@@ -1969,6 +1987,7 @@ label {
   .colform__inputfooter {
     width: 358px;
     height: 50px;
+    margin-bottom: 0;
   }
 }
 
@@ -1995,23 +2014,48 @@ label {
 .colform__btn-footer:focus {
   background-color: var(--accent-color);
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .colform__btn-footer {
     margin-left: 130px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .colform__btn-footer {
     text-align: center;
+    margin-left: 131px;
   }
 }
-
-.colform__icon-footer {
+@media screen and (min-width: 1200px) {
+  .colform__btn-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    color: var(--main-bg-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .colform__btn-footer:hover {
+    border-color: var(--accent-color);
+  }
+  .colform__btn-footer:focus {
+    background-color: var(--accent-color);
+    margin-left: 0;
+  }
+}
+.colform__btn-footer .colform__icon-footer {
   margin-left: 10px;
   fill: currentColor;
 }
-
-.colform__icon-footer:not(:last-child) {
+.colform__btn-footer .colform__icon-footer:not(:last-child) {
   margin: 0;
 }
 
