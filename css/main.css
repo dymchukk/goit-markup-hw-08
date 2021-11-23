@@ -205,7 +205,6 @@ label {
   .nav {
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 60px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1054,11 +1053,6 @@ label {
   color: #757575;
   cursor: pointer;
   text-align: center;
-}
-@media screen and (min-width: 1200px) {
-  .contact-form__chackbox {
-    font-size: 14px;
-  }
 }
 
 .contact-form__chackbox-icon {

@@ -146,9 +146,6 @@
   color: #757575;
   cursor: pointer;
   text-align: center;
-  @media screen and (min-width: 1200px) {
-    font-size: 14px;
-  }
 }
 
 .contact-form__chackbox-icon {
@@ -171,7 +168,6 @@
 }
 .contact-form__footer {
   display: inline-flexbox;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
