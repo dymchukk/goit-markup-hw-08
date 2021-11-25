@@ -8,14 +8,7 @@
   color: #ffffff;
   margin-bottom: 30px;
   color: var(--main-bg-color);
+  @media screen and (max-width: 479px) {
+    font-size: 40px;
+  }
 }
-
-/*.solution {
-  margin-bottom: 40px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  color: var(--main-bg-color);
-}
-*/

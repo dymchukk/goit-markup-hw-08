@@ -1446,16 +1446,12 @@ label {
   margin-bottom: 30px;
   color: var(--main-bg-color);
 }
-
-/*.solution {
-  margin-bottom: 40px;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
-  color: var(--main-bg-color);
+@media screen and (max-width: 479px) {
+  .solution {
+    font-size: 40px;
+  }
 }
-*/
+
 .hero {
   padding: 118px 0;
   border-color: rgba(47, 48, 58, 0.4);
@@ -1991,7 +1987,7 @@ label {
 .menu {
   display: flex;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) {
   .menu {
     flex-direction: column;
   }
