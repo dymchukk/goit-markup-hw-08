@@ -78,6 +78,9 @@
   @media screen and (min-width: 480px) {
     margin-top: 15px;
   }
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    margin-top: 0;
+  }
 }
 .nav__link {
   display: flex;
@@ -115,6 +118,9 @@
   }
 }
 .nav__item {
+  @media screen and (min-width: 768px) {
+    margin-right: 50px;
+  }
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
     font-weight: 500;
