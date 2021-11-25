@@ -1,4 +1,5 @@
 .customers {
+  width: 100%;
 }
 .customers__title {
   margin-bottom: 50px;
@@ -12,10 +13,11 @@
 }
 
 .customers__list {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     flex-wrap: wrap;
     margin-top: -15px;
     display: flex;
+    justify-content: center;
   }
 
   @media screen and (min-width: 768px) {
@@ -32,7 +34,7 @@
   display: flex;
   width: 170px;
   height: 92px;
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     width: calc(100% / 2 -30px);
     margin: 15px;
   }
