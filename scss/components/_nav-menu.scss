@@ -28,7 +28,7 @@
 }
 .nav-menu__logo {
   display: block;
-  margin-right: 93px;
+
   padding-top: 15px;
 
   font-family: 'Raleway', normal;
@@ -36,6 +36,10 @@
   font-size: 26px;
   line-height: 1.19;
   color: var(--main-title-color);
+  @media screen and (min-width: 1200px) {
+    margin-left: 215px;
+    /*margin-right: 93px;*/
+  }
 }
 
 /*padding-bottom: 32px 0;*/

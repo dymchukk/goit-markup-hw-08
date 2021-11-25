@@ -358,13 +358,18 @@ label {
 
 .nav-menu__logo {
   display: block;
-  margin-right: 93px;
   padding-top: 15px;
   font-family: "Raleway", normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--main-title-color);
+}
+@media screen and (min-width: 1200px) {
+  .nav-menu__logo {
+    margin-left: 215px;
+    /*margin-right: 93px;*/
+  }
 }
 
 /*padding-bottom: 32px 0;*/
@@ -421,9 +426,15 @@ label {
 .contacts__link:focus {
   color: var(--accent-color);
 }
+@media screen and (min-width: 768px) {
+  .contacts__link {
+    margin-top: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts__link {
     margin-left: 10px;
+    margin-top: 0;
   }
 }
 
@@ -443,18 +454,11 @@ label {
 }
 
 .contacts__list {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
   letter-spacing: 0.03em;
 }
 @media screen and (min-width: 768px) {
   .contacts__list {
-    flex-direction: column;
-    justify-content: space-between;
-    letter-spacing: 0.02em;
-    font-size: 12px;
-    line-height: 14px;
+    display: inline;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -476,7 +480,15 @@ label {
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
+@media screen and (min-width: 768px) {
+  .contacts__item {
+    padding-top: 10px;
+  }
+}
 @media screen and (min-width: 1200px) {
+  .contacts__item {
+    padding-top: 0;
+  }
   .contacts__item :not(:last-child) {
     margin-right: 50px;
   }
