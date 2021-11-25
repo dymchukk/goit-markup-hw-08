@@ -842,7 +842,7 @@ label {
     align-items: center;
   }
 }
-@media screen and (max-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-section {
     width: 768px;
     flex-wrap: wrap;
@@ -895,7 +895,6 @@ label {
 @media screen and (min-width: 480px) {
   .footer-section__add {
     text-align: center;
-    margin-left: 131px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1741,7 +1740,6 @@ label {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-left: 131px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1816,7 +1814,6 @@ label {
   .join__p {
     margin-top: 60px;
     text-align: center;
-    margin: 167pxpx;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1836,34 +1833,6 @@ label {
   }
 }
 
-/*.join__icon {
-  width: 20px;
-  height: 20px;
-  fill: currentColor;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    background-color: var(--accent-color);
-  }
-}
-.join__link {
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  color: rgba(175, 177, 184, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    fill: var(--accent-color);
-    background-color: var(--accent-color);
-    color: #ffffff;
-  }
-}
-*/
 .colform {
   display: flex;
 }
@@ -1893,7 +1862,6 @@ label {
 .colform__inputfooter {
   height: 50px;
   padding-left: 20px;
-  margin: 0 auto;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   cursor: pointer;
@@ -1919,6 +1887,7 @@ label {
     width: 358px;
     height: 50px;
     margin-bottom: 0;
+    margin: 0 auto;
   }
 }
 
