@@ -21,7 +21,7 @@
   &:focus {
     color: var(--accent-color);
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     display: flex;
     justify-content: center;
   }
@@ -45,7 +45,7 @@
   &:hover {
     color: var(--accent-color);
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     display: flex;
     justify-content: center;
   }

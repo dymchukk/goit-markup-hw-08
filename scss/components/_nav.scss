@@ -1,7 +1,7 @@
 .nav {
   display: flex;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -19,7 +19,7 @@
   }
 }
 .nav__title {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
     flex-wrap: wrap;
     flex-direction: column;
   }
@@ -28,9 +28,11 @@
   @media screen and (min-width: 1200px) {
   }
 }
+
 .nav__title:not(:last-child) {
   margin-right: 8px;
 }
+
 .nav__list {
   display: flex;
 
@@ -75,18 +77,20 @@
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: 320px) {
     margin-top: 15px;
   }
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     margin-top: 0;
   }
 }
+
 .nav__link {
   display: flex;
   font-weight: 500;
   padding: 32px 0;
-  margin-left: 50px;
+
+  margin-right: 50px;
   font-size: 14px;
   line-height: 1.62;
   letter-spacing: 0.02em;
@@ -112,24 +116,34 @@
     background: var(--accent-color);
     border-radius: 2px;
     background-size: contain;
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+      margin-right: 50px;
+      margin-left: 0;
+
+      &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      display: block;
+      margin-left: 50px;
+    }
   }
-  @media screen and (min-width: 1200px) {
-    display: block;
-  }
-}
-.nav__item {
-  @media screen and (min-width: 768px) {
-    margin-right: 50px;
-  }
-  @media screen and (min-width: 1200px) {
-    margin-right: 50px;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--main-title-color);
-  }
-  &:not(:last-child) {
-    margin-right: 50px;
+
+  .nav__item {
+    @media screen and (min-width: 768px) {
+      margin-right: 50px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 50px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.14;
+      letter-spacing: 0.02em;
+      color: var(--main-title-color);
+    }
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
