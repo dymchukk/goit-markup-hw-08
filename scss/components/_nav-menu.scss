@@ -12,33 +12,17 @@
     flex-direction: row;
   }
 }
-.menu {
-  display: flex;
-  @media screen and (min-width: 480px) {
-    flex-direction: column;
-  }
-  @media screen and (min-width: 768px) {
-    display: flex;
-    flex-direction: row;
-  }
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    flex-direction: row;
-  }
-}
+
 .nav-menu__logo {
   display: block;
-
-  padding-top: 15px;
-
   font-family: 'Raleway', normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   color: var(--main-title-color);
   @media screen and (min-width: 1200px) {
-    margin-left: 215px;
-    /*margin-right: 93px;*/
+    /*margin-left: 215px;*/
+    margin-right: 93px;
   }
 }
 

@@ -6,7 +6,6 @@
     flex-wrap: wrap;
   }
   @media screen and (min-width: 768px) {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -34,8 +33,13 @@
 }
 .nav__list {
   display: flex;
-  &:not(:last-child) {
-    margin-right: 50px;
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    align-items: center;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
@@ -105,5 +109,21 @@
     background: var(--accent-color);
     border-radius: 2px;
     background-size: contain;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
+}
+.nav__item {
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+  }
+  &:not(:last-child) {
+    margin-right: 50px;
   }
 }

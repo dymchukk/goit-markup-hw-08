@@ -217,7 +217,6 @@ label {
 }
 @media screen and (min-width: 768px) {
   .nav {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
@@ -245,8 +244,14 @@ label {
 .nav__list {
   display: flex;
 }
-.nav__list:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: auto;
+    align-items: center;
+  }
+  .nav__list:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .nav__button-item {
@@ -313,6 +318,25 @@ label {
   border-radius: 2px;
   background-size: contain;
 }
+@media screen and (min-width: 1200px) {
+  .nav__link {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav__item {
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--main-title-color);
+  }
+}
+.nav__item:not(:last-child) {
+  margin-right: 50px;
+}
 
 .nav-menu {
   display: none;
@@ -335,30 +359,8 @@ label {
   }
 }
 
-.menu {
-  display: flex;
-}
-@media screen and (min-width: 480px) {
-  .menu {
-    flex-direction: column;
-  }
-}
-@media screen and (min-width: 768px) {
-  .menu {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .menu {
-    display: flex;
-    flex-direction: row;
-  }
-}
-
 .nav-menu__logo {
   display: block;
-  padding-top: 15px;
   font-family: "Raleway", normal;
   font-weight: 700;
   font-size: 26px;
@@ -367,8 +369,8 @@ label {
 }
 @media screen and (min-width: 1200px) {
   .nav-menu__logo {
-    margin-left: 215px;
-    /*margin-right: 93px;*/
+    /*margin-left: 215px;*/
+    margin-right: 93px;
   }
 }
 
@@ -1260,7 +1262,6 @@ label {
 }
 */
 .work-section {
-  margin-top: 94px;
   padding-top: 0px;
 }
 @media screen and (max-width: 768px) {
@@ -1961,17 +1962,25 @@ label {
 
 .menu {
   display: flex;
-  flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .menu {
+    flex-direction: column;
+  }
 }
 @media screen and (min-width: 768px) {
   .menu {
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
   }
   .menu:not(:last-child) {
     margin-right: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    flex-direction: row;
   }
 }
 
