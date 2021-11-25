@@ -174,10 +174,14 @@ label {
 }
 
 .header {
-  width: 100%;
-  padding-top: 16px;
-  padding-bottom: 16px;
   border-bottom: 1px solid #ececec;
+}
+@media screen and (min-width: 480px) {
+  .header {
+    width: 100%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -195,7 +199,11 @@ label {
 .header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+@media screen and (min-width: 480px) {
+  .header__container {
+    justify-content: space-between;
+  }
 }
 
 .nav {
@@ -519,7 +527,6 @@ label {
 @media screen and (min-width: 768px) {
   .features {
     flex-wrap: wrap;
-    padding-top: 30px;
     display: flex;
   }
 }
@@ -818,7 +825,6 @@ label {
 
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .footer-section {
-    width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -1331,8 +1337,6 @@ label {
   font-weight: 700;
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  margin-top: 50px;
   color: var(--main-title-color);
 }
 @media screen and (min-width: 480px) and (max-width: 1199px) {
@@ -1648,18 +1652,12 @@ label {
 
 .customers__title {
   margin-bottom: 50px;
-  margin-top: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-title-color);
-}
-@media screen and (min-width: 768px) {
-  .customers__title {
-    margin-top: 50px;
-  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1896,7 +1894,6 @@ label {
 @media screen and (min-width: 480px) {
   .colform__inputfooter {
     margin-bottom: 20px;
-    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
