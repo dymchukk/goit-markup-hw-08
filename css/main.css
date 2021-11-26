@@ -1356,9 +1356,11 @@ label {
   }
 }
 
-.team {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (min-width: 480px) {
+  .team {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 @media screen and (min-width: 768px) {
   .team {
