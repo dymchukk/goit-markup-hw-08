@@ -2104,11 +2104,15 @@ label {
 }
 
 .menu-social__item {
-  margin-right: 20px;
-  border-right: 1px solid #3d3e3f;
+  margin-right: 10px;
+  border-right: 2px solid #dadbdd;
+  padding-right: 10px;
 }
 .menu-social__item:not(:last-child) {
-  border-right: 1px solid #3d3e3f;
+  border-right: 2px solid #dadbdd;
+}
+.menu-social__item:hover {
+  border-color: var(--accent-color);
 }
 
 .menu-social__link {
