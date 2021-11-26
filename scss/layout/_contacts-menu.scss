@@ -51,6 +51,25 @@
     background-size: contain;
   }
 }
+
+.contacts-menu__linkk {
+  font-size: 34px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: var(--accent-color);
+  }
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
 .contacts-menu__list {
   display: flex;
   align-items: center;
