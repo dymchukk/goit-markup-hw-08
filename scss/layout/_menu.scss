@@ -1,8 +1,6 @@
 .menu {
-  display: flex;
-  @media screen and (min-width: 320px) and (max-width: 480px) {
-    flex-direction: column;
-  }
+  display: block;
+  max-width: 767px;
   @media screen and (min-width: 768px) {
     flex-direction: row;
     align-items: center;
@@ -80,7 +78,7 @@
   &:not(:first-child) {
     padding: 32px 0;
   }
-  @media screen and (mim-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
@@ -89,13 +87,16 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 64px;
-  margin-bottom: 48px;
+
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
   border-right: 1px solid var(--main-text--color);
+  @media screen and (min-width: 320px) and (max-width: 479px) {
+    font-size: 12px;
+  }
 }
 .menu-social__item {
   margin-right: 10px;

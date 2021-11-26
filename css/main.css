@@ -1995,12 +1995,8 @@ label {
 }
 
 .menu {
-  display: flex;
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .menu {
-    flex-direction: column;
-  }
+  display: block;
+  max-width: 767px;
 }
 @media screen and (min-width: 768px) {
   .menu {
@@ -2083,7 +2079,7 @@ label {
 .menu__link:not(:first-child) {
   padding: 32px 0;
 }
-@media screen and (mim-width: 768px) {
+@media screen and (min-width: 768px) {
   .menu__link {
     display: none;
   }
@@ -2094,13 +2090,17 @@ label {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 64px;
-  margin-bottom: 48px;
   font-weight: 500;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.02em;
   color: #2196f3;
   border-right: 1px solid var(--main-text--color);
+}
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .menu-social {
+    font-size: 12px;
+  }
 }
 
 .menu-social__item {
@@ -2190,9 +2190,10 @@ label {
 .contacts-menu__linkk:focus {
   color: var(--accent-color);
 }
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 479px) {
   .contacts-menu__linkk {
     font-size: 24px;
+    margin-bottom: 20px;
   }
 }
 
