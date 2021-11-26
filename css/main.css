@@ -2041,21 +2041,18 @@ label {
 
 .menu__item {
   display: flex;
-  margin-right: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
 }
-.menu__item:not(:last-child) {
-  margin-right: 50px;
-}
+
 .menu__link {
   display: flex;
   font-weight: 500;
   padding: 32px 0;
-  margin-left: 50px;
+  justify-content: center;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -2082,6 +2079,9 @@ label {
   background: var(--accent-color);
   border-radius: 2px;
   background-size: contain;
+}
+.menu__link:not(:first-child) {
+  padding: 32px 0;
 }
 @media screen and (mim-width: 768px) {
   .menu__link {
