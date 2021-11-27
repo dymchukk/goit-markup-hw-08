@@ -1248,7 +1248,7 @@ label {
 .work-section {
   padding-top: 0px;
 }
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 1200px) {
   .work-section {
     display: none;
   }
@@ -1263,7 +1263,7 @@ label {
   line-height: 1.16;
   color: var(--main-title-color);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1200px) {
   .work-section__text {
     display: none;
   }
@@ -1307,7 +1307,7 @@ label {
   color: #ffffff;
   background-color: rgba(47, 48, 58, 0.8);
 }
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 320px) and (max-width: 1200px) {
   .work-modal__p {
     display: none;
   }
