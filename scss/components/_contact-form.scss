@@ -173,10 +173,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-  }
-  @media screen and (min-width: 768px) {
+
+  @media screen and (max-width: 1199px) {
     text-align: center;
+    margin-top: 60px;
   }
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
@@ -191,16 +191,13 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  @media screen and (min-width: 320px) and (max-width: 767px) {
-    margin-top: 60px;
+  @media screen and (max-width: 767px) {
     text-align: center;
   }
   @media screen and (min-width: 768px) {
-    margin-top: 60px;
     text-align: center;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 0;
     text-align: left;
   }
 }
