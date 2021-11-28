@@ -579,10 +579,6 @@ label {
   .features__title {
     text-align: center;
     flex-basis: calc(100% / 2 - 30px);
-    margin-bottom: 30px;
-  }
-  .features__title:not(:last-child) {
-    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -645,7 +641,6 @@ label {
 @media screen and (min-width: 768px) {
   .features__text {
     text-align: left;
-    margin-left: 30px;
   }
 }
 
@@ -1483,9 +1478,6 @@ label {
   .project {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: calc(100% / 2 - 60px);
-    flex-direction: row;
-    margin-top: 40px;
     margin-left: -30px;
     margin-top: -30px;
   }
@@ -1503,8 +1495,11 @@ label {
 
 @media screen and (min-width: 768px) {
   .project .project__item {
+    display: flex;
     margin-left: 30px;
     margin-top: 30px;
+    flex-wrap: wrap;
+    flex-basis: calc(100% / 2 - 60px);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1515,19 +1510,11 @@ label {
   }
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .project__link {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
-  .project__link:hover, .project__link:focus {
-    display: block;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-  }
-  .project__link:hover .project__overlay, .project__link:focus .project__overlay {
-    transform: translateY(0);
-  }
-}
-@media screen and (min-width: 768px) {
   .project__link:hover, .project__link:focus {
     display: block;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -1617,7 +1604,9 @@ label {
   padding-bottom: 20px;
   padding-top: 20px;
   padding-left: 24px;
+  padding-right: 24px;
   border: 1px solid #eeeeee;
+  flex-grow: 1;
 }
 
 .customers__title {
