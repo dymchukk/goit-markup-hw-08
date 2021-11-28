@@ -572,7 +572,7 @@ label {
 @media screen and (max-width: 767px) {
   .features__title {
     text-align: center;
-    flex-basis: calc(100% / 2 - 60px);
+    flex-basis: calc(100% / 2 - 30px);
   }
 }
 @media screen and (min-width: 768px) {
@@ -584,9 +584,6 @@ label {
 @media screen and (min-width: 1200px) {
   .features__title {
     flex-basis: calc(100% / 4 - 30px);
-  }
-  .features__title:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
