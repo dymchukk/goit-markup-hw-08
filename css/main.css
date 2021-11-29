@@ -231,18 +231,21 @@ label {
   }
 }
 
+.nav__title {
+  margin-right: 8px;
+  margin-bottom: 15px;
+}
+.nav__title:nth-last-child(-n+3) {
+  margin-bottom: 0;
+}
+.nav__title:not(:last-child) {
+  margin-right: 8px;
+}
 @media screen and (max-width: 767px) {
   .nav__title {
     flex-wrap: wrap;
     flex-direction: column;
   }
-}
-
-.nav__title {
-  margin-right: 8px;
-}
-.nav__title:not(:last-child) {
-  margin-right: 8px;
 }
 
 .nav__list {
@@ -278,11 +281,6 @@ label {
   background-color: var(--accent-color);
   color: var(--main-bg-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-@media screen and (max-width: 767px) {
-  .nav__button-item:nth-child(-n+3) {
-    margin-bottom: 15px;
-  }
 }
 
 .nav__link {
