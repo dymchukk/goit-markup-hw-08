@@ -56,13 +56,11 @@
     display: none;
   }
   @media screen and (min-width: 768px) {
-    display: inline;
+    display: block;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    justify-content: center;
     margin-left: auto;
     letter-spacing: 0.03em;
   }
@@ -79,19 +77,13 @@
 
   @media screen and (min-width: 768px) {
     padding-top: 10px;
+    margin-left: 50px;
     & :not(:first-child) {
       padding-top: 10px;
     }
   }
   @media screen and (min-width: 1200px) {
     padding-top: 0;
-    & :not(:last-child) {
-      margin-right: 50px;
-    }
-  }
-
-  .contacts__item :not(:last-child) {
-    margin-right: 50px;
   }
 
   .contacts__item + .contacts__item {

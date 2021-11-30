@@ -80,7 +80,7 @@
   display: flex;
   font-weight: 500;
   padding: 32px 0;
-  margin-right: 50px;
+
   font-size: 14px;
   line-height: 1.62;
   letter-spacing: 0.02em;
@@ -88,9 +88,6 @@
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
   &:hover {
     color: var(--accent-color);
   }
@@ -127,5 +124,11 @@
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-title-color);
+  }
+}
+.nav__list .nav__item + .nav__item {
+  margin-left: 50px;
+  &:not(:last-child) {
+    margin-left: 50px;
   }
 }
